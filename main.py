@@ -24,7 +24,7 @@ while continue_bidding:
     price = float(input("What is your bidding price?\n $"))
     bids[name] = price
 
-    should_continue = input("Are there any more bidders? Type 'yes' to continue or 'no' to exit.\n")
+    should_continue = input("Are there any more bidders? Type 'yes' to continue or 'no' to exit.\n").lower()
     if should_continue == "no":
         continue_bidding = False
         find_the_highest_bidder(bids)
